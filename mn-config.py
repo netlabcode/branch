@@ -161,6 +161,7 @@ def emptyNet():
     s01m4 = net.addHost('s01m4', ip='100.1.0.14')
     s01cpc = net.addHost('s01cpc', ip='100.1.0.21')
     s01db = net.addHost('s01db', ip='100.1.0.22')
+    s01gw = net.addHost('s01gw', ip='100.1.0.23')
 
     #Add Hosts on Substation 2
     s02m1 = net.addHost('s02m1', ip='100.2.0.11')
@@ -171,6 +172,7 @@ def emptyNet():
     s02m6 = net.addHost('s02m6', ip='100.2.0.16')
     s02cpc = net.addHost('s02cpc', ip='100.2.0.21')
     s02db = net.addHost('s02db', ip='100.2.0.22')
+    s02gw = net.addHost('s02gw', ip='100.2.0.23')
 
     #Add Hosts on Substation 3
     s03m1 = net.addHost('s03m1', ip='100.3.0.11')
@@ -181,6 +183,7 @@ def emptyNet():
     s03m6 = net.addHost('s03m6', ip='100.3.0.16')
     s03cpc = net.addHost('s03cpc', ip='100.3.0.21')
     s03db = net.addHost('s03db', ip='100.3.0.22')
+    s03gw = net.addHost('s03gw', ip='100.3.0.23')
 
     #Add Hosts on Substation 4
     s04m1 = net.addHost('s04m1', ip='100.4.0.11')
@@ -191,6 +194,7 @@ def emptyNet():
     s04m6 = net.addHost('s04m6', ip='100.4.0.16')
     s04cpc = net.addHost('s04cpc', ip='100.4.0.21')
     s04db = net.addHost('s04db', ip='100.4.0.22')
+    s04gw = net.addHost('s04gw', ip='100.4.0.23')
 
     #Add Hosts on Substation 5
     s05m1 = net.addHost('s05m1', ip='100.5.0.11')
@@ -198,7 +202,7 @@ def emptyNet():
     s05m3 = net.addHost('s05m3', ip='100.5.0.13')
     s05cpc = net.addHost('s05cpc', ip='100.5.0.21')
     s05db = net.addHost('s05db', ip='100.5.0.22')
-
+    s05gw = net.addHost('s05gw', ip='100.5.0.23')
 
     #Add Hosts on Substation 6
     s06m1 = net.addHost('s06m1', ip='100.6.0.11')
@@ -209,6 +213,7 @@ def emptyNet():
     s06m6 = net.addHost('s06m6', ip='100.6.0.16')
     s06cpc = net.addHost('s06cpc', ip='100.6.0.21')
     s06db = net.addHost('s06db', ip='100.6.0.22')
+    s06gw = net.addHost('s06gw', ip='100.6.0.23')
 
     #Add Hosts on Substation 7
     s07m1 = net.addHost('s07m1', ip='100.7.0.11')
@@ -222,6 +227,7 @@ def emptyNet():
     s07m9 = net.addHost('s07m9', ip='100.7.0.19')
     s07cpc = net.addHost('s07cpc', ip='100.7.0.21')
     s07db = net.addHost('s07db', ip='100.7.0.22')
+    s07gw = net.addHost('s07gw', ip='100.7.0.23')
 
     #Add Hosts on Substation 8
     s08m1 = net.addHost('s08m1', ip='100.8.0.11')
@@ -231,6 +237,7 @@ def emptyNet():
     s08m5 = net.addHost('s08m5', ip='100.8.0.15')
     s08cpc = net.addHost('s08cpc', ip='100.8.0.21')
     s08db = net.addHost('s08db', ip='100.8.0.22')
+    s08gw = net.addHost('s08gw', ip='100.8.0.23')
 
     #Add Hosts on Substation 9
     s09m1 = net.addHost('s09m1', ip='100.9.0.11')
@@ -242,12 +249,14 @@ def emptyNet():
     s09m7 = net.addHost('s09m7', ip='100.9.0.17')
     s09cpc = net.addHost('s09cpc', ip='100.9.0.21')
     s09db = net.addHost('s09db', ip='100.9.0.22')
+    s09gw = net.addHost('s09gw', ip='100.9.0.23')
 
     #Add Hosts on Substation 10
     s10m1 = net.addHost('s10m1', ip='100.10.0.11')
     s10m2 = net.addHost('s10m2', ip='100.10.0.12')
     s10cpc = net.addHost('s10cpc', ip='100.10.0.21')
     s10db = net.addHost('s10db', ip='100.10.0.22')
+    s10gw = net.addHost('s10gw', ip='100.10.0.23')
 
     #Add Hosts on Substation 11
     s11m1 = net.addHost('s11m1', ip='100.11.0.11')
@@ -256,6 +265,7 @@ def emptyNet():
     s11m4 = net.addHost('s11m4', ip='100.11.0.14')
     s11cpc = net.addHost('s11cpc', ip='100.11.0.21')
     s11db = net.addHost('s11db', ip='100.11.0.22')
+    s11gw = net.addHost('s11gw', ip='100.11.0.23')
 
     #Add Hosts on Substation 12
     s12m1 = net.addHost('s12m1', ip='100.12.0.11')
@@ -263,6 +273,7 @@ def emptyNet():
     s12m3 = net.addHost('s12m3', ip='100.12.0.13')
     s12cpc = net.addHost('s12cpc', ip='100.12.0.21')
     s12db = net.addHost('s12db', ip='100.12.0.22')
+    s12gw = net.addHost('s12gw', ip='100.12.0.23')
 
     #Add Hosts on Substation 13
     s13m1 = net.addHost('s13m1', ip='100.13.0.11')
@@ -276,6 +287,7 @@ def emptyNet():
     s13m9 = net.addHost('s13m9', ip='100.13.0.19')
     s13cpc = net.addHost('s13cpc', ip='100.13.0.21')
     s13db = net.addHost('s13db', ip='100.13.0.22')
+    s13gw = net.addHost('s13gw', ip='100.13.0.23')
 
     #Add Hosts on Substation 14
     s14m1 = net.addHost('s14m1', ip='100.14.0.11')
@@ -283,6 +295,7 @@ def emptyNet():
     s14m3 = net.addHost('s14m3', ip='100.14.0.13')
     s14cpc = net.addHost('s14cpc', ip='100.14.0.21')
     s14db = net.addHost('s14db', ip='100.14.0.22')
+    s14gw = net.addHost('s14gw', ip='100.14.0.23')
 
     #Add Hosts on Substation 15
     s15m1 = net.addHost('s15m1', ip='100.15.0.11')
@@ -291,6 +304,7 @@ def emptyNet():
     s15m4 = net.addHost('s15m4', ip='100.15.0.14')
     s15cpc = net.addHost('s15cpc', ip='100.15.0.21')
     s15db = net.addHost('s15db', ip='100.15.0.22')
+    s15gw = net.addHost('s15gw', ip='100.15.0.23')
 
     #Add Hosts on Substation 16
     s16m1 = net.addHost('s16m1', ip='100.16.0.11')
@@ -299,12 +313,14 @@ def emptyNet():
     s16m4 = net.addHost('s16m4', ip='100.16.0.14')
     s16cpc = net.addHost('s16cpc', ip='100.16.0.21')
     s16db = net.addHost('s16db', ip='100.16.0.22')
+    s16gw = net.addHost('s16gw', ip='100.16.0.23')
 
      #Add Hosts on Substation 17
     s17m1 = net.addHost('s17m1', ip='100.17.0.11')
     s17m2 = net.addHost('s17m2', ip='100.17.0.12')
     s17cpc = net.addHost('s17cpc', ip='100.17.0.21')
     s17db = net.addHost('s17db', ip='100.17.0.22')
+    s17gw = net.addHost('s17gw', ip='100.17.0.23')
 
     #Add Hosts on Substation 18
     s18m1 = net.addHost('s18m1', ip='100.18.0.11')
@@ -312,6 +328,7 @@ def emptyNet():
     s18m3 = net.addHost('s18m3', ip='100.18.0.13')
     s18cpc = net.addHost('s18cpc', ip='100.18.0.21')
     s18db = net.addHost('s18db', ip='100.18.0.22')
+    s18gw = net.addHost('s18gw', ip='100.18.0.23')
 
     #Add Hosts on Substation 19
     s19m1 = net.addHost('s19m1', ip='100.19.0.11')
@@ -321,6 +338,7 @@ def emptyNet():
     s19m5 = net.addHost('s19m5', ip='100.19.0.15')
     s19cpc = net.addHost('s19cpc', ip='100.19.0.21')
     s19db = net.addHost('s19db', ip='100.19.0.22')
+    s19gw = net.addHost('s19gw', ip='100.19.0.23')
 
     #Add Hosts on Substation 20
     s20m1 = net.addHost('s20m1', ip='100.20.0.11')
@@ -328,6 +346,7 @@ def emptyNet():
     s20m3 = net.addHost('s20m3', ip='100.20.0.13')
     s20cpc = net.addHost('s20cpc', ip='100.20.0.21')
     s20db = net.addHost('s20db', ip='100.20.0.22')
+    s20gw = net.addHost('s20gw', ip='100.20.0.23')
 
     #Add Hosts on Substation 21
     s21m1 = net.addHost('s21m1', ip='100.21.0.11')
@@ -335,6 +354,7 @@ def emptyNet():
     s21m3 = net.addHost('s21m3', ip='100.21.0.13')
     s21cpc = net.addHost('s21cpc', ip='100.21.0.21')
     s21db = net.addHost('s21db', ip='100.21.0.22')
+    s21gw = net.addHost('s21gw', ip='100.21.0.23')
 
     #Add Hosts on Substation 22
     s22m1 = net.addHost('s22m1', ip='100.22.0.11')
@@ -342,6 +362,7 @@ def emptyNet():
     s22m3 = net.addHost('s22m3', ip='100.22.0.13')
     s22cpc = net.addHost('s22cpc', ip='100.22.0.21')
     s22db = net.addHost('s22db', ip='100.22.0.22')
+    s22gw = net.addHost('s22gw', ip='100.22.0.23')
 
     #Add Hosts on Substation 23
     s23m1 = net.addHost('s23m1', ip='100.23.0.11')
@@ -349,6 +370,7 @@ def emptyNet():
     s23m3 = net.addHost('s23m3', ip='100.23.0.13')
     s23cpc = net.addHost('s23cpc', ip='100.23.0.21')
     s23db = net.addHost('s23db', ip='100.23.0.22')
+    s23gw = net.addHost('s23gw', ip='100.23.0.23')
 
     #Add Hosts on Substation 24
     s24m1 = net.addHost('s24m1', ip='100.24.0.11')
@@ -358,7 +380,8 @@ def emptyNet():
     s24m5 = net.addHost('s24m5', ip='100.24.0.15')
     s24m6 = net.addHost('s24m6', ip='100.24.0.16')
     s24cpc = net.addHost('s24cpc', ip='100.24.0.21')
-    s24db = net.addHost('s23db', ip='100.24.0.22')
+    s24db = net.addHost('s24db', ip='100.24.0.22')
+    s24gw = net.addHost('s24gw', ip='100.24.0.23')
 
     #Add Hosts on Substation 25
     s25m1 = net.addHost('s25m1', ip='100.25.0.11')
@@ -366,6 +389,7 @@ def emptyNet():
     s25m3 = net.addHost('s25m3', ip='100.25.0.13')
     s25cpc = net.addHost('s25cpc', ip='100.25.0.21')
     s25db = net.addHost('s25db', ip='100.25.0.22')
+    s25gw = net.addHost('s25gw', ip='100.25.0.23')
 
     #Add Hosts on Substation 26
     s26m1 = net.addHost('s26m1', ip='100.26.0.11')
@@ -373,6 +397,7 @@ def emptyNet():
     s26m3 = net.addHost('s26m3', ip='100.26.0.13')
     s26cpc = net.addHost('s26cpc', ip='100.26.0.21')
     s26db = net.addHost('s26db', ip='100.26.0.22')
+    s26gw = net.addHost('s26gw', ip='100.26.0.23')
 
     #Add Hosts on Substation 27
     s27m1 = net.addHost('s27m1', ip='100.27.0.11')
@@ -380,6 +405,7 @@ def emptyNet():
     s27m3 = net.addHost('s27m3', ip='100.27.0.13')
     s27cpc = net.addHost('s27cpc', ip='100.27.0.21')
     s27db = net.addHost('s27db', ip='100.27.0.22')
+    s27gw = net.addHost('s27gw', ip='100.27.0.23')
 
 
     # Link Switch To Router
@@ -391,11 +417,84 @@ def emptyNet():
     # Link siwtch to switch
     net.addLink(s11,s12)
     net.addLink(s13,s12)
+
     net.addLink(s21,s22)
     net.addLink(s23,s22)
 
+    net.addLink(s31,s32)
+    net.addLink(s33,s32)
+
+    net.addLink(s41,s42)
+    net.addLink(s43,s42)
+
+    net.addLink(s51,s52)
+    net.addLink(s53,s52)
+
     net.addLink(s61,s62)
     net.addLink(s63,s62)
+
+    net.addLink(s71,s72)
+    net.addLink(s73,s72)
+
+    net.addLink(s81,s82)
+    net.addLink(s83,s82)
+
+    net.addLink(s91,s92)
+    net.addLink(s93,s92)
+
+    net.addLink(s101,s102)
+    net.addLink(s103,s102)
+
+    net.addLink(s111,s112)
+    net.addLink(s113,s112)
+
+    net.addLink(s121,s122)
+    net.addLink(s123,s122)
+
+    net.addLink(s131,s132)
+    net.addLink(s133,s132)
+
+    net.addLink(s141,s142)
+    net.addLink(s143,s142)
+
+    net.addLink(s151,s152)
+    net.addLink(s153,s152)
+
+    net.addLink(s161,s162)
+    net.addLink(s163,s162)
+
+    net.addLink(s171,s172)
+    net.addLink(s173,s172)
+
+    net.addLink(s181,s182)
+    net.addLink(s183,s182)
+
+    net.addLink(s191,s192)
+    net.addLink(s193,s192)
+
+    net.addLink(s201,s202)
+    net.addLink(s203,s202)
+
+    net.addLink(s211,s212)
+    net.addLink(s213,s212)
+
+    net.addLink(s221,s222)
+    net.addLink(s223,s222)
+
+    net.addLink(s231,s232)
+    net.addLink(s233,s232)
+
+    net.addLink(s241,s242)
+    net.addLink(s243,s242)
+
+    net.addLink(s251,s252)
+    net.addLink(s253,s252)
+
+    net.addLink(s261,s262)
+    net.addLink(s263,s262)
+
+    net.addLink(s271,s272)
+    net.addLink(s273,s272)
 
 
     # Link Host to switch Control Center
