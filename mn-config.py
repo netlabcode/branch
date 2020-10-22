@@ -501,16 +501,180 @@ def emptyNet():
     net.addLink(ccctrl,s999, intfName1='ccctrl-eth1', params1={'ip':'150.0.0.11/24'})
     net.addLink(ccdb,s999, intfName1='ccdb-eth1', params1={'ip':'150.0.0.12/24'})
 
-    # Link Host to switch Subsatation
+    # Link Substation 01 Merging unit to Switch
     net.addLink(s01m1,s13, intfName1='s01m1-eth1', params1={'ip':'100.1.0.11/24'})
-    net.addLink(s02m1,s23, intfName1='s02m1-eth1', params1={'ip':'100.2.0.11/24'})
+    net.addLink(s01m2,s13, intfName1='s01m2-eth1', params1={'ip':'100.1.0.12/24'})
+    net.addLink(s01m3,s13, intfName1='s01m3-eth1', params1={'ip':'100.1.0.13/24'})
+    net.addLink(s01m4,s13, intfName1='s01m4-eth1', params1={'ip':'100.1.0.14/24'})
 
+    # Link Substation 02 Merging unit to Switch
+    net.addLink(s02m1,s23, intfName1='s02m1-eth1', params1={'ip':'100.2.0.11/24'})
+    net.addLink(s02m2,s23, intfName1='s02m2-eth1', params1={'ip':'100.2.0.12/24'})
+    net.addLink(s02m3,s23, intfName1='s02m3-eth1', params1={'ip':'100.2.0.13/24'})
+    net.addLink(s02m4,s23, intfName1='s02m4-eth1', params1={'ip':'100.2.0.14/24'})
+    net.addLink(s02m5,s23, intfName1='s02m5-eth1', params1={'ip':'100.2.0.15/24'})
+    net.addLink(s02m6,s23, intfName1='s02m6-eth1', params1={'ip':'100.2.0.16/24'})
+
+    # Link Substation 03 Merging unit to Switch
+    net.addLink(s03m1,s33, intfName1='s03m1-eth1', params1={'ip':'100.3.0.11/24'})
+    net.addLink(s03m2,s33, intfName1='s03m2-eth1', params1={'ip':'100.3.0.12/24'})
+    net.addLink(s03m3,s33, intfName1='s03m3-eth1', params1={'ip':'100.3.0.13/24'})
+    net.addLink(s03m4,s33, intfName1='s03m4-eth1', params1={'ip':'100.3.0.14/24'})
+    net.addLink(s03m5,s33, intfName1='s03m5-eth1', params1={'ip':'100.3.0.15/24'})
+    net.addLink(s03m6,s33, intfName1='s03m6-eth1', params1={'ip':'100.3.0.16/24'})
+
+    # Link Substation 04 Merging unit to Switch
+    net.addLink(s04m1,s43, intfName1='s04m1-eth1', params1={'ip':'100.4.0.11/24'})
+    net.addLink(s04m2,s43, intfName1='s04m2-eth1', params1={'ip':'100.4.0.12/24'})
+    net.addLink(s04m3,s43, intfName1='s04m3-eth1', params1={'ip':'100.4.0.13/24'})
+    net.addLink(s04m4,s43, intfName1='s04m4-eth1', params1={'ip':'100.4.0.14/24'})
+    net.addLink(s04m5,s43, intfName1='s04m5-eth1', params1={'ip':'100.4.0.15/24'})
+    net.addLink(s04m6,s43, intfName1='s04m6-eth1', params1={'ip':'100.4.0.16/24'})
+
+    # Link Substation 05 Merging unit to Switch
+    net.addLink(s05m1,s53, intfName1='s05m1-eth1', params1={'ip':'100.5.0.11/24'})
+    net.addLink(s05m2,s53, intfName1='s05m2-eth1', params1={'ip':'100.5.0.12/24'})
+    net.addLink(s05m3,s53, intfName1='s05m3-eth1', params1={'ip':'100.5.0.13/24'})
+
+    # Link Substation 06 Merging unit to Switch
     net.addLink(s06m1,s63, intfName1='s06m1-eth1', params1={'ip':'100.6.0.11/24'})
     net.addLink(s06m2,s63, intfName1='s06m2-eth1', params1={'ip':'100.6.0.12/24'})
     net.addLink(s06m3,s63, intfName1='s06m3-eth1', params1={'ip':'100.6.0.13/24'})
     net.addLink(s06m4,s63, intfName1='s06m4-eth1', params1={'ip':'100.6.0.14/24'})
     net.addLink(s06m5,s63, intfName1='s06m5-eth1', params1={'ip':'100.6.0.15/24'})
-    net.addLink(s06m6,s63, intfName1='s06m6-eth1', params1={'ip':'100.6.0.16/24'})    
+    net.addLink(s06m6,s63, intfName1='s06m6-eth1', params1={'ip':'100.6.0.16/24'})
+
+    # Link Substation 07 Merging unit to Switch
+    net.addLink(s07m1,s73, intfName1='s07m1-eth1', params1={'ip':'100.7.0.11/24'})
+    net.addLink(s07m2,s73, intfName1='s07m2-eth1', params1={'ip':'100.7.0.12/24'})
+    net.addLink(s07m3,s73, intfName1='s07m3-eth1', params1={'ip':'100.7.0.13/24'})
+    net.addLink(s07m4,s73, intfName1='s07m4-eth1', params1={'ip':'100.7.0.14/24'})
+    net.addLink(s07m5,s73, intfName1='s07m5-eth1', params1={'ip':'100.7.0.15/24'})
+    net.addLink(s07m6,s73, intfName1='s07m6-eth1', params1={'ip':'100.7.0.16/24'})
+    net.addLink(s07m7,s73, intfName1='s07m7-eth1', params1={'ip':'100.7.0.17/24'})
+    net.addLink(s07m8,s73, intfName1='s07m8-eth1', params1={'ip':'100.7.0.18/24'})
+    net.addLink(s07m9,s73, intfName1='s07m9-eth1', params1={'ip':'100.7.0.19/24'})
+
+    # Link Substation 08 Merging unit to Switch
+    net.addLink(s08m1,s83, intfName1='s08m1-eth1', params1={'ip':'100.8.0.11/24'})
+    net.addLink(s08m2,s83, intfName1='s08m2-eth1', params1={'ip':'100.8.0.12/24'})
+    net.addLink(s08m3,s83, intfName1='s08m3-eth1', params1={'ip':'100.8.0.13/24'})
+    net.addLink(s08m4,s83, intfName1='s08m4-eth1', params1={'ip':'100.8.0.14/24'})
+    net.addLink(s08m5,s83, intfName1='s08m5-eth1', params1={'ip':'100.8.0.15/24'})
+
+    # Link Substation 09 Merging unit to Switch
+    net.addLink(s09m1,s93, intfName1='s09m1-eth1', params1={'ip':'100.9.0.11/24'})
+    net.addLink(s09m2,s93, intfName1='s09m2-eth1', params1={'ip':'100.9.0.12/24'})
+    net.addLink(s09m3,s93, intfName1='s09m3-eth1', params1={'ip':'100.9.0.13/24'})
+    net.addLink(s09m4,s93, intfName1='s09m4-eth1', params1={'ip':'100.9.0.14/24'})
+    net.addLink(s09m5,s93, intfName1='s09m5-eth1', params1={'ip':'100.9.0.15/24'})
+    net.addLink(s09m6,s93, intfName1='s09m6-eth1', params1={'ip':'100.9.0.16/24'})
+    net.addLink(s09m7,s93, intfName1='s09m7-eth1', params1={'ip':'100.9.0.17/24'})
+
+    # Link Substation 10 Merging unit to Switch
+    net.addLink(s10m1,s103, intfName1='s10m1-eth1', params1={'ip':'100.10.0.11/24'})
+    net.addLink(s10m2,s103, intfName1='s10m2-eth1', params1={'ip':'100.10.0.12/24'})
+
+    # Link Substation 11 Merging unit to Switch
+    net.addLink(s11m1,s113, intfName1='s11m1-eth1', params1={'ip':'100.11.0.11/24'})
+    net.addLink(s11m2,s113, intfName1='s11m2-eth1', params1={'ip':'100.11.0.12/24'})
+    net.addLink(s11m3,s113, intfName1='s11m3-eth1', params1={'ip':'100.11.0.13/24'})
+    net.addLink(s11m4,s113, intfName1='s11m4-eth1', params1={'ip':'100.11.0.14/24'})
+
+    # Link Substation 12 Merging unit to Switch
+    net.addLink(s12m1,s123, intfName1='s12m1-eth1', params1={'ip':'100.12.0.11/24'})
+    net.addLink(s12m2,s123, intfName1='s12m2-eth1', params1={'ip':'100.12.0.12/24'})
+    net.addLink(s12m3,s123, intfName1='s12m3-eth1', params1={'ip':'100.12.0.13/24'})
+
+    # Link Substation 13 Merging unit to Switch
+    net.addLink(s13m1,s133, intfName1='s13m1-eth1', params1={'ip':'100.13.0.11/24'})
+    net.addLink(s13m2,s133, intfName1='s13m2-eth1', params1={'ip':'100.13.0.12/24'})
+    net.addLink(s13m3,s133, intfName1='s13m3-eth1', params1={'ip':'100.13.0.13/24'})
+    net.addLink(s13m4,s133, intfName1='s13m4-eth1', params1={'ip':'100.13.0.14/24'})
+    net.addLink(s13m5,s133, intfName1='s13m5-eth1', params1={'ip':'100.13.0.15/24'})
+    net.addLink(s13m6,s133, intfName1='s13m6-eth1', params1={'ip':'100.13.0.16/24'})
+    net.addLink(s13m7,s133, intfName1='s13m7-eth1', params1={'ip':'100.13.0.17/24'})
+    net.addLink(s13m8,s133, intfName1='s13m8-eth1', params1={'ip':'100.13.0.18/24'})
+    net.addLink(s13m9,s133, intfName1='s13m9-eth1', params1={'ip':'100.13.0.19/24'})
+
+    # Link Substation 14 Merging unit to Switch
+    net.addLink(s14m1,s143, intfName1='s14m1-eth1', params1={'ip':'100.14.0.11/24'})
+    net.addLink(s14m2,s143, intfName1='s14m2-eth1', params1={'ip':'100.14.0.12/24'})
+    net.addLink(s14m3,s143, intfName1='s14m3-eth1', params1={'ip':'100.14.0.13/24'})
+
+    # Link Substation 15 Merging unit to Switch
+    net.addLink(s15m1,s153, intfName1='s15m1-eth1', params1={'ip':'100.15.0.11/24'})
+    net.addLink(s15m2,s153, intfName1='s15m2-eth1', params1={'ip':'100.15.0.12/24'})
+    net.addLink(s15m3,s153, intfName1='s15m3-eth1', params1={'ip':'100.15.0.13/24'})
+    net.addLink(s15m4,s153, intfName1='s15m4-eth1', params1={'ip':'100.15.0.14/24'})
+
+    # Link Substation 16 Merging unit to Switch
+    net.addLink(s16m1,s163, intfName1='s16m1-eth1', params1={'ip':'100.16.0.11/24'})
+    net.addLink(s16m2,s163, intfName1='s16m2-eth1', params1={'ip':'100.16.0.12/24'})
+    net.addLink(s16m3,s163, intfName1='s16m3-eth1', params1={'ip':'100.16.0.13/24'})
+    net.addLink(s16m4,s163, intfName1='s16m4-eth1', params1={'ip':'100.16.0.14/24'})
+
+    # Link Substation 17 Merging unit to Switch
+    net.addLink(s17m1,s173, intfName1='s17m1-eth1', params1={'ip':'100.17.0.11/24'})
+    net.addLink(s17m2,s173, intfName1='s17m2-eth1', params1={'ip':'100.17.0.12/24'})
+
+    # Link Substation 18 Merging unit to Switch
+    net.addLink(s18m1,s183, intfName1='s18m1-eth1', params1={'ip':'100.18.0.11/24'})
+    net.addLink(s18m2,s183, intfName1='s18m2-eth1', params1={'ip':'100.18.0.12/24'})
+    net.addLink(s18m3,s183, intfName1='s18m3-eth1', params1={'ip':'100.18.0.13/24'})
+
+    # Link Substation 19 Merging unit to Switch
+    net.addLink(s19m1,s193, intfName1='s19m1-eth1', params1={'ip':'100.19.0.11/24'})
+    net.addLink(s19m2,s193, intfName1='s19m2-eth1', params1={'ip':'100.19.0.12/24'})
+    net.addLink(s19m3,s193, intfName1='s19m3-eth1', params1={'ip':'100.19.0.13/24'})
+    net.addLink(s19m4,s193, intfName1='s19m4-eth1', params1={'ip':'100.19.0.14/24'})
+    net.addLink(s19m5,s193, intfName1='s19m5-eth1', params1={'ip':'100.19.0.15/24'})
+
+    # Link Substation 20 Merging unit to Switch
+    net.addLink(s20m1,s203, intfName1='s20m1-eth1', params1={'ip':'100.20.0.11/24'})
+    net.addLink(s20m2,s203, intfName1='s20m2-eth1', params1={'ip':'100.20.0.12/24'})
+    net.addLink(s20m3,s203, intfName1='s20m3-eth1', params1={'ip':'100.20.0.13/24'})
+
+    # Link Substation 21 Merging unit to Switch
+    net.addLink(s21m1,s213, intfName1='s21m1-eth1', params1={'ip':'100.21.0.11/24'})
+    net.addLink(s21m2,s213, intfName1='s21m2-eth1', params1={'ip':'100.21.0.12/24'})
+    net.addLink(s21m3,s213, intfName1='s21m3-eth1', params1={'ip':'100.21.0.13/24'})
+
+    # Link Substation 22 Merging unit to Switch
+    net.addLink(s22m1,s223, intfName1='s22m1-eth1', params1={'ip':'100.22.0.11/24'})
+    net.addLink(s22m2,s223, intfName1='s22m2-eth1', params1={'ip':'100.22.0.12/24'})
+    net.addLink(s22m3,s223, intfName1='s22m3-eth1', params1={'ip':'100.22.0.13/24'})
+
+    # Link Substation 23 Merging unit to Switch
+    net.addLink(s23m1,s233, intfName1='s23m1-eth1', params1={'ip':'100.23.0.11/24'})
+    net.addLink(s23m2,s233, intfName1='s23m2-eth1', params1={'ip':'100.23.0.12/24'})
+    net.addLink(s23m3,s233, intfName1='s23m3-eth1', params1={'ip':'100.23.0.13/24'})
+
+    # Link Substation 24 Merging unit to Switch
+    net.addLink(s24m1,s243, intfName1='s24m1-eth1', params1={'ip':'100.24.0.11/24'})
+    net.addLink(s24m2,s243, intfName1='s24m2-eth1', params1={'ip':'100.24.0.12/24'})
+    net.addLink(s24m3,s243, intfName1='s24m3-eth1', params1={'ip':'100.24.0.13/24'})
+    net.addLink(s24m4,s243, intfName1='s24m4-eth1', params1={'ip':'100.24.0.14/24'})
+    net.addLink(s24m5,s243, intfName1='s24m5-eth1', params1={'ip':'100.24.0.15/24'})
+    net.addLink(s24m6,s243, intfName1='s24m6-eth1', params1={'ip':'100.24.0.16/24'})
+
+    # Link Substation 25 Merging unit to Switch
+    net.addLink(s25m1,s253, intfName1='s25m1-eth1', params1={'ip':'100.25.0.11/24'})
+    net.addLink(s25m2,s253, intfName1='s25m2-eth1', params1={'ip':'100.25.0.12/24'})
+    net.addLink(s25m3,s253, intfName1='s25m3-eth1', params1={'ip':'100.25.0.13/24'})
+
+    # Link Substation 26 Merging unit to Switch
+    net.addLink(s26m1,s263, intfName1='s26m1-eth1', params1={'ip':'100.26.0.11/24'})
+    net.addLink(s26m2,s263, intfName1='s26m2-eth1', params1={'ip':'100.26.0.12/24'})
+    net.addLink(s26m3,s263, intfName1='s26m3-eth1', params1={'ip':'100.26.0.13/24'})
+
+     # Link Substation 27 Merging unit to Switch
+    net.addLink(s27m1,s273, intfName1='s27m1-eth1', params1={'ip':'100.27.0.11/24'})
+    net.addLink(s27m2,s273, intfName1='s27m2-eth1', params1={'ip':'100.27.0.12/24'})
+    net.addLink(s27m3,s273, intfName1='s27m3-eth1', params1={'ip':'100.27.0.13/24'})
+
+
+   
 
     net.addLink(s01cpc,s12)
     net.addLink(s02cpc,s22)
