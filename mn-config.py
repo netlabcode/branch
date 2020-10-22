@@ -48,16 +48,113 @@ def emptyNet():
     s22 = net.addSwitch( 's22' )
     s23 = net.addSwitch( 's23' )
 
+    s31 = net.addSwitch( 's31' )
+    s32 = net.addSwitch( 's32' )
+    s33 = net.addSwitch( 's33' )
+
+    s41 = net.addSwitch( 's41' )
+    s42 = net.addSwitch( 's42' )
+    s43 = net.addSwitch( 's43' )
+
+    s51 = net.addSwitch( 's51' )
+    s52 = net.addSwitch( 's52' )
+    s53 = net.addSwitch( 's53' )
+
     s61 = net.addSwitch( 's61' )
     s62 = net.addSwitch( 's62' )
     s63 = net.addSwitch( 's63' )
 
+    s71 = net.addSwitch( 's71' )
+    s72 = net.addSwitch( 's72' )
+    s73 = net.addSwitch( 's73' )
+
+    s81 = net.addSwitch( 's81' )
+    s82 = net.addSwitch( 's82' )
+    s83 = net.addSwitch( 's83' )
+
+    s91 = net.addSwitch( 's91' )
+    s92 = net.addSwitch( 's92' )
+    s93 = net.addSwitch( 's93' )
+
+    s101 = net.addSwitch( 's101' )
+    s102 = net.addSwitch( 's102' )
+    s103 = net.addSwitch( 's103' )
+
+    s111 = net.addSwitch( 's111' )
+    s112 = net.addSwitch( 's112' )
+    s113 = net.addSwitch( 's113' )
+
+    s121 = net.addSwitch( 's121' )
+    s122 = net.addSwitch( 's122' )
+    s123 = net.addSwitch( 's123' )
+
+    s131 = net.addSwitch( 's131' )
+    s132 = net.addSwitch( 's132' )
+    s133 = net.addSwitch( 's133' )
+
+    s141 = net.addSwitch( 's141' )
+    s142 = net.addSwitch( 's142' )
+    s143 = net.addSwitch( 's143' )
+
+    s151 = net.addSwitch( 's151' )
+    s152 = net.addSwitch( 's152' )
+    s153 = net.addSwitch( 's153' )
+
+    s161 = net.addSwitch( 's161' )
+    s162 = net.addSwitch( 's162' )
+    s163 = net.addSwitch( 's163' )
+
+    s171 = net.addSwitch( 's171' )
+    s172 = net.addSwitch( 's172' )
+    s173 = net.addSwitch( 's173' )
+
+    s181 = net.addSwitch( 's181' )
+    s182 = net.addSwitch( 's182' )
+    s183 = net.addSwitch( 's183' )
+
+    s191 = net.addSwitch( 's191' )
+    s192 = net.addSwitch( 's192' )
+    s193 = net.addSwitch( 's193' )
+
+    s201 = net.addSwitch( 's201' )
+    s202 = net.addSwitch( 's202' )
+    s203 = net.addSwitch( 's203' )
+
+    s211 = net.addSwitch( 's211' )
+    s212 = net.addSwitch( 's212' )
+    s213 = net.addSwitch( 's213' )
+
+    s221 = net.addSwitch( 's221' )
+    s222 = net.addSwitch( 's222' )
+    s223 = net.addSwitch( 's223' )
+
+    s231 = net.addSwitch( 's231' )
+    s232 = net.addSwitch( 's232' )
+    s233 = net.addSwitch( 's233' )
+
+    s241 = net.addSwitch( 's241' )
+    s242 = net.addSwitch( 's242' )
+    s243 = net.addSwitch( 's243' )
+
+    s251 = net.addSwitch( 's251' )
+    s252 = net.addSwitch( 's252' )
+    s253 = net.addSwitch( 's253' )
+
+    s261 = net.addSwitch( 's261' )
+    s262 = net.addSwitch( 's262' )
+    s263 = net.addSwitch( 's263' )
+
+    s271 = net.addSwitch( 's271' )
+    s272 = net.addSwitch( 's272' )
+    s273 = net.addSwitch( 's273' )
+
+   
 
     #Add Host on Control Center
     ccctrl = net.addHost('ccctrl', ip='150.0.0.11')
     ccdb = net.addHost('ccdb', ip='150.0.0.12')
 
-    #Add Host on Substation
+    #Add Host on Substation 1
     s01m1 = net.addHost('s01m1', ip='100.1.0.11')
     s01cpc = net.addHost('s01cpc', ip='100.1.0.21')
 
