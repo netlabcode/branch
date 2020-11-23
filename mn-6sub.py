@@ -1,3 +1,4 @@
+from mininet.topo import Topo
 from mininet.net import Mininet
 from mininet.node import Node, Controller, RemoteController, OVSSwitch, OVSKernelSwitch, Host
 from mininet.cli import CLI
