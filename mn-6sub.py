@@ -1,9 +1,8 @@
-from mininet.topo import Topo
 from mininet.net import Mininet
 from mininet.node import Node, Controller, RemoteController, OVSSwitch, OVSKernelSwitch, Host
-from mininet.log import setLogLevel, info
-from mininet.link import Intf, TCLink
 from mininet.cli import CLI
+from mininet.link import Intf, TCLink
+from mininet.log import setLogLevel, info
 import os
 
 
