@@ -17,7 +17,7 @@ conn.autocommit = True
 cursor = conn.cursor()
 
 # Preparing SQL queries to INSERT a record into the database.
-cursor.execute('''INSERT INTO test(val) VALUES (33)''')
+cursor.execute('''INSERT INTO test(val, dec) VALUES (33, 220.123456)''')
 
 cursor.close()
 conn.close()
