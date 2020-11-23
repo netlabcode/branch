@@ -27,9 +27,6 @@ class NetworkTopo( Topo ):
 
     def build( self, **_opts ):
 
-    
-        #c0 = net.addController( 'c0',controller=RemoteController,ip=CONTROLLER_IP,port=6633)
-        self.addController('c0', port=6633)
 
         #Switch External Gateway
         s777 = self.addSwitch( 's777' )
@@ -106,6 +103,8 @@ def run():
     "Test linux router"
     topo = NetworkTopo()
     net = Mininet( topo=topo )  # controller is used by s1-s3
+    #c0 = net.addController( 'c0',controller=RemoteController,ip=CONTROLLER_IP,port=6633)
+    net.addController('c0', port=6633)
     net.addNAT(ip='100.0.0.250').configDefault()
     net.start()
 
