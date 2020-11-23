@@ -19,8 +19,20 @@ cursor = conn.cursor()
 
 dt = datetime.now()
 
+inserted_values = (
+        dt,
+        16.12,
+        123
+    )
+
+# INSTER VALUE TO TABLE ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+cursor.execute(" INSERT INTO test(dtime, dec, val) VALUES (%s,%s,%s)", inserted_values)
+
+"""
 # Preparing SQL queries to INSERT a record into the database.
 cursor.execute('''INSERT INTO test(val, dec, dtime) VALUES (33, -999.123456, dt)''')
+"""
+
 
 cursor.close()
 conn.close()
