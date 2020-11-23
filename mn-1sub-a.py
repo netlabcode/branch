@@ -66,7 +66,7 @@ def emptyNet():
     net.addLink(s06m6,s63, intfName1='s06m6-eth1', params1={'ip':'100.6.0.16/24'})
     net.addLink(s06cpc,s62)
     net.addLink(s06db,s62)
-    net.addLink(s06gw,s61)
+    net.addLink(s06gw,s61, intfName1='s06gw-eth1', params1={'ip':'100.6.0.23/24'})
 
     # Link Host to switch to external gateway
     net.addLink(s06m1,s777, intfName1='s06m1-eth0', params1={'ip':'10.0.0.11/24'})
@@ -76,7 +76,7 @@ def emptyNet():
     net.addLink(s06m5,s777, intfName1='s06m5-eth0', params1={'ip':'10.0.0.15/24'})
     net.addLink(s06m6,s777, intfName1='s06m6-eth0', params1={'ip':'10.0.0.16/24'})
 
-    net.addLink(s06gw,s777, intfName1='s06gw-eth0', params1={'ip':'10.0.0.21/24'})
+    net.addLink(s06gw,s777, intfName1='s06gw-eth0', params1={'ip':'10.0.0.23/24'})
 
 
     #Build and start Network ============================================================================
