@@ -21,7 +21,7 @@ dt = datetime.now()
 
 inserted_values = (
         dt,
-        16.12,
+        123456.123456789123456,
         123
     )
 
