@@ -1,4 +1,5 @@
 import psycopg2
+from datetime import datetime
  
 conn = psycopg2.connect(host="131.180.165.5",database="crpg", user="postgres", password="crpg")
 
@@ -16,8 +17,10 @@ conn.autocommit = True
 #Creating a cursor object using the cursor() method
 cursor = conn.cursor()
 
+dt = datetime.now()
+
 # Preparing SQL queries to INSERT a record into the database.
-cursor.execute('''INSERT INTO test(val, dec) VALUES (33, -123.123456)''')
+cursor.execute('''INSERT INTO test(val, dec, dtime) VALUES (33, -999.123456, dt)''')
 
 cursor.close()
 conn.close()
