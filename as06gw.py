@@ -9,6 +9,7 @@ HOST1 = '100.6.0.11'
 HOST2 = '100.6.0.12'
 HOST3 = '100.6.0.13'
 HOST4 = '100.6.0.14'
+HOST5 = '100.6.0.15'
 PORT1 = 993
 PORT2 = 994
 PORTS1 = 881
@@ -137,13 +138,37 @@ def serverFour():
 
 			print("4")
 
+def serverFive():
+	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc1:
+		sc1.connect((HOST5, PORT1))
+		
+		x = 1
+		while x < 6:
+			#recive data from server A
+			data1 = sc1.recv(1024)
+
+			strval1 = str(data1.decode("utf-8"))
+
+			a,b,c= strval1.split("+")
+
+			inserted_values = (
+        		a,
+        		b,
+        		c
+    		)
+
+			cursor.execute(" INSERT INTO s06m5(dtime, cb_ctrl, cb_res) VALUES (%s,%s,%s)", inserted_values)
+
+			print("5")
+
 
 # Create two threads as follows
 try:
    #_thread.start_new_thread( serverOne, ( ) )
    #_thread.start_new_thread( serverTwo, ( ) )
    #_thread.start_new_thread( serverThree, ( ) )
-   _thread.start_new_thread( serverFour, ( ) )
+   #_thread.start_new_thread( serverFour, ( ) )
+   _thread.start_new_thread( serverFive, ( ) )
 
 except:
    print ("Error: unable to start thread")
