@@ -41,7 +41,7 @@ def serverOne():
         		g
     		)
 
-			cursor.execute(" INSERT INTO s06m1(dtime, M1_B23_Li_23_24_CB_ctrl, M1_B23_Li_23_24_CB_res, M1_B23_Li_23_24_I_res, M1_B23_Li_23_24_P_res, M1_B23_Li_23_24_Q_res, M1_B23_Li_23_24_V_res) VALUES (%s,%s,%s,%s,%s,%s,%s)", inserted_values)
+			cursor.execute(" INSERT INTO s06m1(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
 			print(a)
 
