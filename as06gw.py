@@ -10,6 +10,7 @@ HOST2 = '100.6.0.12'
 HOST3 = '100.6.0.13'
 HOST4 = '100.6.0.14'
 HOST5 = '100.6.0.15'
+HOST6 = '100.6.0.16'
 PORT1 = 993
 PORT2 = 994
 PORTS1 = 881
@@ -161,6 +162,36 @@ def serverFive():
 
 			print("5")
 
+def serverSix():
+	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc1:
+		sc1.connect((HOST6, PORT1))
+		
+		x = 1
+		while x < 6:
+			#recive data from server A
+			data1 = sc1.recv(1024)
+
+			strval1 = str(data1.decode("utf-8"))
+
+			a,b,c,d,e,f,g,h,i,j= strval1.split("+")
+
+			inserted_values = (
+        		a,
+        		b,
+        		c,
+        		d,
+        		e,
+        		f,
+        		g,
+        		h,
+        		i,
+        		j
+    		)
+
+			cursor.execute(" INSERT INTO s06m5(dtime, cb_ctrl, cb_res, ld_res, p_ctrl, p_res, q_res, v_ctrl, v_res, f_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)", inserted_values)
+
+			print("6")
+
 
 # Create two threads as follows
 try:
@@ -168,7 +199,8 @@ try:
    #_thread.start_new_thread( serverTwo, ( ) )
    #_thread.start_new_thread( serverThree, ( ) )
    #_thread.start_new_thread( serverFour, ( ) )
-   _thread.start_new_thread( serverFive, ( ) )
+   #_thread.start_new_thread( serverFive, ( ) )
+   _thread.start_new_thread( serverSix, ( ) )
 
 except:
    print ("Error: unable to start thread")
