@@ -2,6 +2,7 @@ import binascii
 import _thread
 import time
 import socket
+import psycopg2
 
 
 HOST1 = '100.6.0.11'
@@ -15,14 +16,16 @@ def serverOne():
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc1:
 		sc1.connect((HOST1, PORT1))
 		
-		a = 1
-		while a < 6:
+		x = 1
+		while x < 6:
 			#recive data from server A
 			data1 = sc1.recv(1024)
 
-			strval1 = "mu01+"+str(data1.decode("utf-8"))
+			strval1 = str(data1.decode("utf-8"))
 
-			print(strval1)
+			a,b,c,d,e,f,g = strval1.split("+")
+
+			print(a)
 
 
 
