@@ -6,7 +6,7 @@ import psycopg2
 
 
 HOST1 = '100.6.0.11'
-HOST1 = '100.6.0.12'
+HOST2 = '100.6.0.12'
 PORT1 = 993
 PORT2 = 994
 PORTS1 = 881
