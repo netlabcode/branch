@@ -8,6 +8,7 @@ import psycopg2
 HOST1 = '100.6.0.11'
 HOST2 = '100.6.0.12'
 HOST3 = '100.6.0.13'
+HOST4 = '100.6.0.14'
 PORT1 = 993
 PORT2 = 994
 PORTS1 = 881
@@ -45,7 +46,7 @@ def serverOne():
 
 			cursor.execute(" INSERT INTO s06m1(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print(a)
+			print("1")
 
 def serverTwo():
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc1:
@@ -72,7 +73,7 @@ def serverTwo():
 
 			cursor.execute(" INSERT INTO s06m2(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print(b)
+			print("2")
 
 
 def serverThree():
@@ -107,7 +108,34 @@ def serverThree():
 
 			cursor.execute(" INSERT INTO s06m3(dtime, v_res, cb_ctrl, cb_res, ld_res, f_res, hv_p_res, hv_q_res, lv_p_res, lv_q_res, tr_tap, tr_tap_ctrl, tr_tap_mode, tr_tap_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
-			print(b)
+			print("3")
+
+def serverFour():
+	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sc1:
+		sc1.connect((HOST4, PORT1))
+		
+		x = 1
+		while x < 6:
+			#recive data from server A
+			data1 = sc1.recv(1024)
+
+			strval1 = str(data1.decode("utf-8"))
+
+			a,b,c,d,e,f,g = strval1.split("+")
+
+			inserted_values = (
+        		a,
+        		b,
+        		c,
+        		d,
+        		e,
+        		f,
+        		g
+    		)
+
+			cursor.execute(" INSERT INTO s06m4(dtime, cb_ctrl, cb_res, i_res, p_res, q_res, v_res) VALUES (%s,%s,%s,%s,%s,%s,%s)", inserted_values)
+
+			print("4")
 
 
 # Create two threads as follows
@@ -115,6 +143,7 @@ try:
    _thread.start_new_thread( serverOne, ( ) )
    _thread.start_new_thread( serverTwo, ( ) )
    _thread.start_new_thread( serverThree, ( ) )
+   _thread.start_new_thread( serverFour, ( ) )
 
 except:
    print ("Error: unable to start thread")
