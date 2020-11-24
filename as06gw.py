@@ -188,7 +188,7 @@ def serverSix():
         		j
     		)
 
-			cursor.execute(" INSERT INTO s06m5(dtime, cb_ctrl, cb_res, ld_res, p_ctrl, p_res, q_res, v_ctrl, v_res, f_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)", inserted_values)
+			cursor.execute(" INSERT INTO s06m6(dtime, cb_ctrl, cb_res, ld_res, p_ctrl, p_res, q_res, v_ctrl, v_res, f_res) VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)", inserted_values)
 
 			print("6")
 
