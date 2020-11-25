@@ -5,6 +5,7 @@ from mininet.node import Node, Controller, RemoteController, OVSSwitch, OVSKerne
 from mininet.cli import CLI
 from mininet.link import Intf, TCLink
 from mininet.log import setLogLevel, info
+import time
 
 
 class LinuxRouter( Node ):
@@ -96,6 +97,10 @@ def emptyNet():
     info( net[ 's06m4' ].cmd( 'python3 as06m4.py &amp' ) )
     info( net[ 's06m5' ].cmd( 'python3 as06m5.py &amp' ) )
     info( net[ 's06m6' ].cmd( 'python3 as06m6.py &amp' ) )
+
+    time.sleep(5)
+
+    info( net[ 's06db' ].cmd( 'python3 ascdb.py &amp' ) )
 
 
     CLI( net )

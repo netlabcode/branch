@@ -45,7 +45,6 @@ def serverMU01():
 				data1new = data1.decode("utf-8")
 				datet,a,b,ce,d,e,f = data1new.split("+")
 
-				print(ce)
 				#save db
 				con = db_connect()
 				c = con.cursor()
