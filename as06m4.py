@@ -49,11 +49,12 @@ def serverOne():
 					value4 = val4.get_value()
 					value5 = val5.get_value()
 					value6 = val6.get_value()
+					dt = datetime.now()
 
 					#covert inetger to string
 					#stringd = str(value)
 
-					stringd = str(value1)+"+"+str(value2)+"+"+str(value3)+"+"+str(value4)+"+"+str(value5)+"+"+str(value6)
+					stringd = str(dt)+"+"+str(value1)+"+"+str(value2)+"+"+str(value3)+"+"+str(value4)+"+"+str(value5)+"+"+str(value6)
 
 					#convert string to bytes data
 					data1 = stringd.encode()

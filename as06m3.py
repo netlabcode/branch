@@ -63,11 +63,12 @@ def serverOne():
 					value11 = val11.get_value()
 					value12 = val12.get_value()
 					value13 = val13.get_value()
+					dt = datetime.now()
 
 					#covert inetger to string
 					#stringd = str(value)
 
-					stringd = str(value1)+"+"+str(value2)+"+"+str(value3)+"+"+str(value4)+"+"+str(value5)+"+"+str(value6)+"+"+str(value7)+"+"+str(value8)+"+"+str(value9)+"+"+str(value10)+"+"+str(value11)+"+"+str(value12)+"+"+str(value13)
+					stringd = str(dt)+"+"+str(value1)+"+"+str(value2)+"+"+str(value3)+"+"+str(value4)+"+"+str(value5)+"+"+str(value6)+"+"+str(value7)+"+"+str(value8)+"+"+str(value9)+"+"+str(value10)+"+"+str(value11)+"+"+str(value12)+"+"+str(value13)
 
 					#convert string to bytes data
 					data1 = stringd.encode()

@@ -43,11 +43,12 @@ def serverOne():
 					#Update OPC value
 					value1 = val1.get_value()
 					value2 = val2.get_value()
+					dt = datetime.now()
 
 					#covert inetger to string
 					#stringd = str(value)
 
-					stringd = str(value1)+"+"+str(value2)
+					stringd = str(dt)+"+"+str(value1)+"+"+str(value2)
 
 					#convert string to bytes data
 					data1 = stringd.encode()
