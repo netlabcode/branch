@@ -45,12 +45,12 @@ def emptyNet():
     s63 = net.addSwitch( 's63' )
 
     #Add Hosts on Substation 6
-    s06m1 = net.addHost('s06m1', ip='100.6.0.11', cls=CPULimitedHost, cpu=.01, mac='00:00:00:00:00:01')
-    s06m2 = net.addHost('s06m2', ip='100.6.0.12', cls=CPULimitedHost, cpu=.01, mac='00:00:00:00:00:02')
-    s06m3 = net.addHost('s06m3', ip='100.6.0.13', cls=CPULimitedHost, cpu=.01, mac='00:00:00:00:00:03')
-    s06m4 = net.addHost('s06m4', ip='100.6.0.14', cls=CPULimitedHost, cpu=.01, mac='00:00:00:00:00:04')
-    s06m5 = net.addHost('s06m5', ip='100.6.0.15', cls=CPULimitedHost, cpu=.01, mac='00:00:00:00:00:05')
-    s06m6 = net.addHost('s06m6', ip='100.6.0.16', cls=CPULimitedHost, cpu=.01, mac='00:00:00:00:00:06')
+    s06m1 = net.addHost('s06m1', ip='100.6.0.11', cls=CPULimitedHost, cpu=.1, mac='00:00:00:00:00:01')
+    s06m2 = net.addHost('s06m2', ip='100.6.0.12', cls=CPULimitedHost, cpu=.1, mac='00:00:00:00:00:02')
+    s06m3 = net.addHost('s06m3', ip='100.6.0.13', cls=CPULimitedHost, cpu=.1, mac='00:00:00:00:00:03')
+    s06m4 = net.addHost('s06m4', ip='100.6.0.14', cls=CPULimitedHost, cpu=.1, mac='00:00:00:00:00:04')
+    s06m5 = net.addHost('s06m5', ip='100.6.0.15', cls=CPULimitedHost, cpu=.1, mac='00:00:00:00:00:05')
+    s06m6 = net.addHost('s06m6', ip='100.6.0.16', cls=CPULimitedHost, cpu=.1, mac='00:00:00:00:00:06')
     s06cpc = net.addHost('s06cpc', ip='100.6.0.21', mac='00:00:00:00:00:0a')
     s06db = net.addHost('s06db', ip='100.6.0.22', mac='00:00:00:00:00:0b')
     s06gw = net.addHost('s06gw', ip='100.6.0.23', mac='00:00:00:00:00:0c')
