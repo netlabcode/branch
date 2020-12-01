@@ -17,14 +17,19 @@ print(pcap_data[17].load)
 pcap_data[17].show()
 """
 
-val = str("123+2 3")
+val = str("123+22")
 pcap_data[17].load = val.encode()
 pcap_data[17][IP].src = "100.6.0.21"
 pcap_data[17][IP].dst = "100.6.0.11"
 pcap_data[17][TCP].dport = 992
-pcap_data[17][IP].len = 59
+pcap_data[17][IP].len = 57
+
+pcap_data[17].src = "00:00:00:00:00:0a"
+pcap_data[17].dst = "00:00:00:00:00:01"
 
 sendp(pcap_data[17])
+
+
 
 
 
