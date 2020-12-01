@@ -62,12 +62,12 @@ def emptyNet():
     net.addLink(s63,s62)
 
     # Link Substation 06 Merging unit to Switch
-    net.addLink(s06m1,s63, intfName1='s06m1-eth1', params1={'ip':'100.6.0.11/24'}, cls=TCLink, bw=0.001 )
-    net.addLink(s06m2,s63, intfName1='s06m2-eth1', params1={'ip':'100.6.0.12/24'}, cls=TCLink, bw=0.001 )
-    net.addLink(s06m3,s63, intfName1='s06m3-eth1', params1={'ip':'100.6.0.13/24'}, cls=TCLink, bw=0.001 )
-    net.addLink(s06m4,s63, intfName1='s06m4-eth1', params1={'ip':'100.6.0.14/24'}, cls=TCLink, bw=0.001 )
-    net.addLink(s06m5,s63, intfName1='s06m5-eth1', params1={'ip':'100.6.0.15/24'}, cls=TCLink, bw=0.001 )
-    net.addLink(s06m6,s63, intfName1='s06m6-eth1', params1={'ip':'100.6.0.16/24'}, cls=TCLink, bw=0.001 )
+    net.addLink(s06m1,s63, intfName1='s06m1-eth1', params1={'ip':'100.6.0.11/24'}, cls=TCLink, bw=0.01 )
+    net.addLink(s06m2,s63, intfName1='s06m2-eth1', params1={'ip':'100.6.0.12/24'}, cls=TCLink, bw=0.01 )
+    net.addLink(s06m3,s63, intfName1='s06m3-eth1', params1={'ip':'100.6.0.13/24'}, cls=TCLink, bw=0.01 )
+    net.addLink(s06m4,s63, intfName1='s06m4-eth1', params1={'ip':'100.6.0.14/24'}, cls=TCLink, bw=0.01 )
+    net.addLink(s06m5,s63, intfName1='s06m5-eth1', params1={'ip':'100.6.0.15/24'}, cls=TCLink, bw=0.01 )
+    net.addLink(s06m6,s63, intfName1='s06m6-eth1', params1={'ip':'100.6.0.16/24'}, cls=TCLink, bw=0.01 )
     net.addLink(s06cpc,s62)
     net.addLink(s06db,s62)
     net.addLink(s06gw,s61, intfName1='s06gw-eth1', params1={'ip':'100.6.0.23/24'})
@@ -102,7 +102,7 @@ def emptyNet():
     info( net[ 's06m5' ].cmd( 'python3 as06m5.py &amp' ) )
     info( net[ 's06m6' ].cmd( 'python3 as06m6.py &amp' ) )
 
-    time.sleep(5)
+    #time.sleep(5)
 
     #info( net[ 's06db' ].cmd( 'python3 ascdb.py &amp' ) )
 
