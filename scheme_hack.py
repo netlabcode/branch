@@ -85,7 +85,7 @@ def serverXMUCC():
 									print(cmdstring1)
 									print(cmdstring2)
 								elif '2' in stringx:
-									cmdstring1 = "250+0"
+									cmdstring1 = "250+1"
 									cmdstring2 = "253+-5"
 									cmd1 = cmdstring1.encode()
 									cmd2 = cmdstring2.encode()
