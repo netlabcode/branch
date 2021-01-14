@@ -62,16 +62,13 @@ def serverXMUCC():
 												stringx = str(input("Command entry: "))
 												print(stringx)
 												part1,part2 = stringx.split("_")
-												print(part1)
-
-												
+	
 
 												if 'mu01' in stringx:
 													part1,part2 = stringx.split("_")
 													part2x = part2.encode()
 													print(part2x)
-													#sx1.sendall(part2x)
-												"""
+													sx1.sendall(part2x)
 												elif 'mu02' in stringx:
 													part1,part2 = stringx.split("_")
 													print(part2)
@@ -122,7 +119,7 @@ def serverXMUCC():
 
 												time.sleep(1)
 												#sx2.close()
-												"""
+												
 
 
 # Create two threads as follows
