@@ -295,7 +295,6 @@ def serverMU10():
 				#c.execute("INSERT INTO mu01(xtime, B23_Li_23_24_CB_ctrl) VALUES (?,?)",(datet,int(a)))
 				con.commit()
 				con.close()
-                print(datet)
                 print(ce)
                 
 			except Exception:
