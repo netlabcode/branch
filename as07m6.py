@@ -204,9 +204,9 @@ def serverTwoCC():
 					elif check == 314:
 						val6.set_value(value, ua.VariantType.Float)
 						print('Value 314 set to:',value)
-                    elif check == 310:
-                        val7.set_value(value, ua.VariantType.Float)
-                        print('Value 310 set to:',value)
+					elif check == 310:
+						val7.set_value(value, ua.VariantType.Float)
+						print('Value 310 set to:',value)
 					else:
 							print(".")
 
