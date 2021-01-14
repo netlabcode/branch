@@ -305,20 +305,10 @@ def serverMU10():
 				pass
 # Create two threads as follows
 try:
-   _thread.start_new_thread( serverMU01, ( ) )
-"""
-   _thread.start_new_thread( serverMU02, ( ) )
-   _thread.start_new_thread( serverMU03, ( ) )
-   _thread.start_new_thread( serverMU04, ( ) )
-   _thread.start_new_thread( serverMU05, ( ) )
-   _thread.start_new_thread( serverMU06, ( ) )
-   _thread.start_new_thread( serverMU07, ( ) )
-   _thread.start_new_thread( serverMU08, ( ) )
-   _thread.start_new_thread( serverMU09, ( ) )
-   _thread.start_new_thread( serverMU10, ( ) )
-"""
+    _thread.start_new_thread( serverMU01, ( ) )
+
 except:
-   print ("Error: unable to start thread")
+    print ("Error: unable to start thread")
 
 while 1:
    pass
