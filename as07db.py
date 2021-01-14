@@ -21,7 +21,6 @@ MU10 = '100.7.0.20'
 PORT1 = 991
 PORT2 = 992
 
-
 def create_connection(db_file):
 	conn = None
 	try:
@@ -29,7 +28,6 @@ def create_connection(db_file):
 	except Error as e:
 		print(e)
 	return conn
-
 
 def db_connect():
 	datafile="s07.db"
@@ -84,7 +82,6 @@ def serverMU02():
 				c = con.cursor()
 				#datet = datetime.datetime.now()
 				c.execute("INSERT INTO mu02(xtime, B19_Tr_19_33_CB_ctrl, B19_Tr_19_33_CB_res, B19_Tr_19_33_Ld_res , B19_Tr_19_33_V_res, B19_Tr_19_33_f_res, B19_Tr_19_33_hv_P_res, B19_Tr_19_33_hv_Q_res, B19_Tr_19_33_lv_P_res, B19_Tr_19_33_lv_Q_res, B19_Tr_19_33_tap, B19_Tr_19_33_tap_ctrl, B19_Tr_19_33_tap_mode, B19_Tr_19_33_tap_res) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)",(datet,int(a),int(b),float(ce),float(d),float(e),float(f),float(g),float(h),float(i),int(j),int(k),int(l),int(m)))
-				#c.execute("INSERT INTO mu01(xtime, B23_Li_23_24_CB_ctrl) VALUES (?,?)",(datet,int(a)))
 				con.commit()
 				con.close()
 			except Exception:
@@ -197,18 +194,18 @@ def serverMU06():
 				pass
 
 def serverMU07():
-	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s1:
-		s1.connect((MU07, PORT1))
+	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s2:
+		s2.connect((MU07, PORT1))
 		x = 1
 		while x < 6:
 			#recive data from server
-			data1 = s1.recv(1024)
-			
-			try: 
-				#parsing data
-				data1new = data1.decode("utf-8")
-				datet,a,b,ce,d,e = data1new.split("+")
+			data2 = s2.recv(1024)
 
+			#parsing data
+			data1new = data2.decode("utf-8")
+
+			try:
+				datet,a,b,ce,d,e = data1new.split("+")
 				#save db
 				con = db_connect()
 				c = con.cursor()
@@ -220,8 +217,6 @@ def serverMU07():
 			except Exception:
 				print("mu07")
 				pass
-
-
 
 def serverMU08():
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s2:
@@ -255,7 +250,6 @@ def serverMU09():
 		while x < 6:
 			#recive data from server
 			data2 = s2.recv(1024)
-			#print('MU02:',data2)
 
 			#parsing data
 			data1new = data2.decode("utf-8")
@@ -295,10 +289,10 @@ def serverMU10():
 				#c.execute("INSERT INTO mu01(xtime, B23_Li_23_24_CB_ctrl) VALUES (?,?)",(datet,int(a)))
 				con.commit()
 				con.close()
-                
 			except Exception:
 				print("mu10")
 				pass
+
 # Create two threads as follows
 try:
    _thread.start_new_thread( serverMU01, ( ) )
