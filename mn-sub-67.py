@@ -155,14 +155,25 @@ def emptyNet():
     nat = net.get('nat0')
     nat.cmdPrint('ip link set mtu 1454 dev nat0-eth0')
 
-    """
-    #info( net[ 's06m1' ].cmd( 'python3 as06m1.py &amp' ) )
+    
+    info( net[ 's06m1' ].cmd( 'python3 as06m1.py &amp' ) )
     info( net[ 's06m2' ].cmd( 'python3 as06m2.py &amp' ) )
     info( net[ 's06m3' ].cmd( 'python3 as06m3.py &amp' ) )
     info( net[ 's06m4' ].cmd( 'python3 as06m4.py &amp' ) )
     info( net[ 's06m5' ].cmd( 'python3 as06m5.py &amp' ) )
     info( net[ 's06m6' ].cmd( 'python3 as06m6.py &amp' ) )
-    """
+
+    info( net[ 's07m1' ].cmd( 'python3 as07m1.py &amp' ) )
+    info( net[ 's07m2' ].cmd( 'python3 as07m2.py &amp' ) )
+    info( net[ 's07m3' ].cmd( 'python3 as07m3.py &amp' ) )
+    info( net[ 's07m4' ].cmd( 'python3 as07m4.py &amp' ) )
+    info( net[ 's07m5' ].cmd( 'python3 as07m5.py &amp' ) )
+    info( net[ 's07m6' ].cmd( 'python3 as07m6.py &amp' ) )
+    info( net[ 's07m7' ].cmd( 'python3 as07m7.py &amp' ) )
+    info( net[ 's07m8' ].cmd( 'python3 as07m8.py &amp' ) )
+    info( net[ 's07m9' ].cmd( 'python3 as07m9.py &amp' ) )
+    info( net[ 's07m10' ].cmd( 'python3 as07m10.py &amp' ) )
+    
 
     #time.sleep(5)
 
