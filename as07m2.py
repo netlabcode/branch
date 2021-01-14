@@ -32,7 +32,7 @@ val9 = client.get_node("ns=2;i=277")
 val10 = client.get_node("ns=2;i=278")
 val11 = client.get_node("ns=2;i=279")
 val12 = client.get_node("ns=2;i=280")
-val13 = client.get_node("ns=2;id=280")
+
 
 
 # Define a function for the thread
