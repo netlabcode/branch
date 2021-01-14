@@ -51,7 +51,7 @@ def serverOne():
 					value4 = val4.get_value()
 					value5 = val5.get_value()
 					value6 = val6.get_value()
-                    value7 = val7.get_value()
+					value7 = val7.get_value()
 					dt = datetime.now()
 
 
@@ -95,7 +95,7 @@ def serverOneCC():
 					value4 = val4.get_value()
 					value5 = val5.get_value()
 					value6 = val6.get_value()
-                    value7 = val7.get_value()
+					value7 = val7.get_value()
 					dt = datetime.now()
 
 					#covert inetger to string
