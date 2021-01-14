@@ -34,6 +34,7 @@ val11 = client.get_node("ns=2;i=279")
 val12 = client.get_node("ns=2;i=280")
 val13 = client.get_node("ns=2;id=281")
 
+
 # Define a function for the thread
 def serverOne():
 	with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s1:
@@ -139,7 +140,7 @@ def serverTwo():
 		s2.bind(('',PORT2))
 		s2.listen()
 		conn2, addr = s2.accept()
-		value=0
+		valueb=0
 		with conn2:
 			print('Server 2 from:',addr)
 			while True:
@@ -205,7 +206,7 @@ def serverTwoCC():
 		s2.bind(('',PORT4))
 		s2.listen()
 		conn2, addr = s2.accept()
-		value=0
+		valueb=0
 		with conn2:
 			print('Server 2 from:',addr)
 			while True:
