@@ -139,7 +139,7 @@ def serverTwo():
 		s2.bind(('',PORT2))
 		s2.listen()
 		conn2, addr = s2.accept()
-		valueb=0
+		value=0
 		with conn2:
 			print('Server 2 from:',addr)
 			while True:
@@ -205,7 +205,7 @@ def serverTwoCC():
 		s2.bind(('',PORT4))
 		s2.listen()
 		conn2, addr = s2.accept()
-		valueb=0
+		value=0
 		with conn2:
 			print('Server 2 from:',addr)
 			while True:
@@ -219,7 +219,7 @@ def serverTwoCC():
 
 
 					value = int(b)
-					check = int(a)S
+					check = int(a)
 					if check == 270:
 						val1.set_value(value, ua.VariantType.Int16)
 						print('Value 270 set to:',value)
