@@ -50,10 +50,10 @@ def serverOne():
 					value3 = val3.get_value()
 					value4 = val4.get_value()
 					value5 = val5.get_value()
-                    value6 = val6.get_value()
-                    value7 = val7.get_value()
+					value6 = val6.get_value()
+					value7 = val7.get_value()
 					value8 = val8.get_value()
-                    value9 = val9.get_value()
+					value9 = val9.get_value()
 					dt = datetime.now()
 
 					#covert inetger to string
@@ -96,10 +96,10 @@ def serverOneCC():
 					value3 = val3.get_value()
 					value4 = val4.get_value()
 					value5 = val5.get_value()
-                    value6 = val6.get_value()
-                    value7 = val7.get_value()
+					value6 = val6.get_value()
+					value7 = val7.get_value()
 					value8 = val8.get_value()
-                    value9 = val9.get_value()
+					value9 = val9.get_value()
 					dt = datetime.now()
 
 					#covert inetger to string
@@ -158,20 +158,20 @@ def serverTwo():
 					elif check == 266:
 						val5.set_value(value, ua.VariantType.Float)
 						print('Value 266 set to:',value)
-                    elif check == 267:
+					elif check == 267:
 						val6.set_value(value, ua.VariantType.Float)
 						print('Value 267 set to:',value)
-                     elif check == 268:
+					elif check == 268:
 						val7.set_value(value, ua.VariantType.Float)
 						print('Value 268 set to:',value)
-                    elif check == 269:
+					elif check == 269:
 						val8.set_value(value, ua.VariantType.Float)
 						print('Value 269 set to:',value)
-                    elif check == 263:
+					elif check == 263:
 						val9.set_value(value, ua.VariantType.Float)
 						print('Value 263 set to:',value)
 					else:
-							print(".")
+						print(".")
 
 				except Exception:
 						print("Two")
@@ -212,20 +212,20 @@ def serverTwoCC():
 					elif check == 266:
 						val5.set_value(value, ua.VariantType.Float)
 						print('Value 266 set to:',value)
-                    elif check == 267:
+					elif check == 267:
 						val6.set_value(value, ua.VariantType.Float)
 						print('Value 267 set to:',value)
-                     elif check == 268:
+					elif check == 268:
 						val7.set_value(value, ua.VariantType.Float)
 						print('Value 268 set to:',value)
-                    elif check == 269:
+					elif check == 269:
 						val8.set_value(value, ua.VariantType.Float)
 						print('Value 269 set to:',value)
-                    elif check == 263:
+					elif check == 263:
 						val9.set_value(value, ua.VariantType.Float)
 						print('Value 263 set to:',value)
 					else:
-							print(".")
+						print(".")
 				except Exception:
 						print("TwoCC")
 						pass
