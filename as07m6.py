@@ -41,36 +41,37 @@ def serverOne():
 			while True:
 				a = 1
 				value = 2
-			
-					try:
-						#Update OPC value
-						value1 = val1.get_value()
-						value2 = val2.get_value()
-						value3 = val3.get_value()
-						value4 = val4.get_value()
-						value5 = val5.get_value()
-						value6 = val6.get_value()
-                        value7 = val7.get_value()
-						dt = datetime.now()
+				
+				try:
+					
+					#Update OPC value
+					value1 = val1.get_value()
+					value2 = val2.get_value()
+					value3 = val3.get_value()
+					value4 = val4.get_value()
+					value5 = val5.get_value()
+					value6 = val6.get_value()
+                    value7 = val7.get_value()
+					dt = datetime.now()
 
 
-						#covert inetger to string
-						#stringd = str(value)
+					#covert inetger to string
+					#stringd = str(value)
 
-						stringd =  str(dt)+"+"+str(value1)+"+"+str(value2)+"+"+str(value3)+"+"+str(value4)+"+"+str(value5)+"+"+str(value6)+"+"+str(value7)
+					stringd =  str(dt)+"+"+str(value1)+"+"+str(value2)+"+"+str(value3)+"+"+str(value4)+"+"+str(value5)+"+"+str(value6)+"+"+str(value7)
 
-						#convert string to bytes data
-						data1 = stringd.encode()
+					#convert string to bytes data
+					data1 = stringd.encode()
 
-						#send data back to client
-						conn1.sendall(data1)
+					#send data back to client
+					conn1.sendall(data1)
 
-						#print('S1:',data1)
-						time.sleep(1)
+					#print('S1:',data1)
+					time.sleep(1)
 
-					except Exception:
-						print("One")
-						pass
+				except Exception:
+					print("One")
+					pass
 
 
 def serverOneCC():
@@ -86,33 +87,33 @@ def serverOneCC():
 				value = 2
 				
 
-					try: 
-						#Update OPC value
-						value1 = val1.get_value()
-						value2 = val2.get_value()
-						value3 = val3.get_value()
-						value4 = val4.get_value()
-						value5 = val5.get_value()
-						value6 = val6.get_value()
-                        value7 = val7.get_value()
-						dt = datetime.now()
+				try: 
+					#Update OPC value
+					value1 = val1.get_value()
+					value2 = val2.get_value()
+					value3 = val3.get_value()
+					value4 = val4.get_value()
+					value5 = val5.get_value()
+					value6 = val6.get_value()
+                    value7 = val7.get_value()
+					dt = datetime.now()
 
-						#covert inetger to string
-						#stringd = str(value)
+					#covert inetger to string
+					#stringd = str(value)
 
-						stringd = str(dt)+"+"+str(value1)+"+"+str(value2)+"+"+str(value3)+"+"+str(value4)+"+"+str(value5)+"+"+str(value6)+"+"+str(value7)
+					stringd = str(dt)+"+"+str(value1)+"+"+str(value2)+"+"+str(value3)+"+"+str(value4)+"+"+str(value5)+"+"+str(value6)+"+"+str(value7)
 
-						#convert string to bytes data
-						data1 = stringd.encode()
+					#convert string to bytes data
+					data1 = stringd.encode()
 
-						#send data back to client
-						conn1.sendall(data1)
+					#send data back to client
+					conn1.sendall(data1)
 
-						#print('S1:',data1)
-						time.sleep(1)
+					#print('S1:',data1)
+					time.sleep(1)
 
-					except Exception:
-						print("OneCC")
+				except Exception:
+					print("OneCC")
 					pass
 
 
