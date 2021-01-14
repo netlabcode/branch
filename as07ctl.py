@@ -63,16 +63,15 @@ def serverXMUCC():
 												print(stringx)
 												part1,part2 = stringx.split("_")
 												print(part1)
-												part2x = part2.encode()
-												print(part2x)
 
-												"""
+												
 
 												if 'mu01' in stringx:
 													part1,part2 = stringx.split("_")
-													print(part2)
 													part2x = part2.encode()
-													sx1.sendall(part2x)
+													print(part2x)
+													#sx1.sendall(part2x)
+												"""
 												elif 'mu02' in stringx:
 													part1,part2 = stringx.split("_")
 													print(part2)
